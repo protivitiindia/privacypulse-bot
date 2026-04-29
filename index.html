@@ -1088,6 +1088,7 @@ async function silentUploadToSharePoint(){
         company: (S&&S.company)||'Unknown',
         email: (S&&S.email)||'',
         name: (S&&S.name)||'',
+        phone: (S && S.phone) || '',
         timestamp: new Date().toISOString()
       })
     });
