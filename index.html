@@ -959,7 +959,7 @@ function batchCard(d){
  </div>
  </div>`;
  w.appendChild(wrap);
- wrap.scrollIntoView({behavior:'smooth',block:'start'});
+ wrap.scrollIntoView({behavior:'smooth',block:'center'});
 }
 
 function bPick(btn){
@@ -1026,8 +1026,8 @@ function contCard(){
  div.innerHTML=`<img class="bot-avatar" src="data:image/jpeg;base64,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" alt="Protiviti" style="flex-shrink:0"><div class="continue-card" style="flex:1">
  <p>Would you like to run another assessment?</p>
  <div class="continue-btns">
- <button class="btn-yes" onclick="cont('YES',this)">Yes, start again</button>
- <button class="btn-no" onclick="cont('NO',this)">No, I'm done</button>
+ <button class="btn-yes" onclick="cont('YES',this)">Yes </button>
+ <button class="btn-no" onclick="cont('NO',this)">No </button>
  </div></div>`;
  w.appendChild(div);sb();
 }
@@ -1137,21 +1137,43 @@ window.onload=()=>setTimeout(()=>bubble('assistant',
 </script>
 <div class="modal" id="consentModal">
 <div class="modal-content">
-<h2>Consent Requirement</h2>
-<p> I consent to Protiviti collecting and processing my personal data (such as name, organization, official email ID, and contact number) for the purpose of sharing assessment results, related follow-up communication, and internal analysis.</p>
-<p>My data will be processed in accordance with applicable data protection laws and Protiviti’s privacy and information security policies, with appropriate safeguards in place.</p>
-<p>My data will be retained only for as long as necessary to fulfil the stated purposes or as required by law, and will not be used for any unrelated purposes or shared with third parties without my consent, except where required by law or for secure service delivery.</p>
-<p>I understand that providing consent is voluntary and that I may withdraw it at any time.</p>
-<p>For exercising my rights under applicable data protection laws or for grievance redressal, I can contact the Data Protection Officer at: [DPO Email Address]</p>
+<h2 style="margin-bottom:12px;">Consent Requirement</h2>
+
+<p style="margin-bottom:20px;">
+I consent to Protiviti collecting and processing my personal data (such as name, organization, official email ID, and contact number) for the purpose of sharing assessment results, related follow-up communication, and internal analysis.
+</p>
+
+<p style="margin-bottom:16px;">
+My data will be processed in accordance with applicable data protection laws and Protiviti’s privacy and information security policies, with appropriate safeguards in place.
+</p>
+
+<p style="margin-bottom:16px;">
+My data will be retained only for as long as necessary to fulfil the stated purposes or as required by law, and will not be used for any unrelated purposes or shared with third parties without my consent, except where required by law or for secure service delivery.
+</p>
+
+<p style="margin-bottom:16px;">
+I understand that providing consent is voluntary and that I may withdraw it at any time.
+</p>
+
+<p style="margin-bottom:20px;">
+For exercising my rights under applicable data protection laws or for grievance redressal, I can contact the Data Protection Officer at: [DPO Email Address]
+</p>
+
 <button onclick="agreeConsent()">Agree</button>
 <button onclick="declineConsent()">Decline</button>
 </div>
 </div>
 <div class="modal" id="declineModal">
 <div class="modal-content">
-<h2>UNABLE TO PROCEED!</h2>
-<p>Thank you for your time and consideration. As consent has not been provided, we will be unable to proceed with the assessment at this stage.</p>
-<p>Should you wish to proceed in the future, please feel free to reach out to us at DataPrivacy@protivitiglobal.in or REFRESH THE PAGE TO RESTART the consent process.</p>
+<h2 style="margin-bottom:12px;">UNABLE TO PROCEED!</h2>
+
+<p style="margin-bottom:20px;">
+Thank you for your time and consideration. As consent has not been provided, we will be unable to proceed with the assessment at this stage.
+</p>
+
+<p style="margin-bottom:20px;">
+Should you wish to proceed in the future, please feel free to reach out to us at DataPrivacy@protivitiglobal.in or REFRESH THE PAGE TO RESTART the consent process.
+</p>
 </div>
 </div>
 <style>
